@@ -8,7 +8,7 @@ import Auth from "@/layouts/Auth.vue";
 
 // views for Admin layout
 
-import Dashboard from "@/views/admin/Dashboard.vue";
+// import Dashboard from "@/views/admin/Dashboard.vue";
 import Settings from "@/views/admin/Settings.vue";
 import Tables from "@/views/admin/Tables.vue";
 import Maps from "@/views/admin/Maps.vue";
@@ -35,7 +35,7 @@ const routes = [
       children: [
         {
           path: "/admin/dashboard",
-          component: Dashboard,
+          component: DashSonoc,
         },
         {
           path: "/admin/settings",
@@ -77,7 +77,7 @@ const routes = [
     {
       path: "/",
       redirect: "/admin/dashboard",
-      component: Dashboard,
+      component: DashSonoc,
     },
     { 
       path: "/test",

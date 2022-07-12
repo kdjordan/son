@@ -8,11 +8,11 @@
     >
       <div class="items-center flex">
         <span
-          class="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full"
+          class="w-12 h-12 text-sm text-white  inline-flex items-center justify-center rounded-full"
         >
           <img
             alt="..."
-            class="w-full rounded-full align-middle border-none shadow-lg"
+            class="w-full rounded-full align-middle border-none shadow-lg fill-white"
             :src="image"
           />
         </span>
@@ -58,7 +58,7 @@
 <script>
 import { createPopper } from "@popperjs/core";
 
-import image from "@/assets/img/team-1-800x800.jpg";
+import image from "@/assets/svg/user-default.svg";
 
 export default {
   data() {
