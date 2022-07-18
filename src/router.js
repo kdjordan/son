@@ -17,7 +17,6 @@ import Maps from "@/views/admin/Maps.vue";
 
 import Login from "@/views/auth/Login.vue";
 import Register from "@/views/auth/Register.vue";
-import Test from "@/views/Test.vue";
 import DashSonoc from "@/views/admin/DashSonoc.vue";
 
 // views without layouts
@@ -78,10 +77,6 @@ const routes = [
       path: "/",
       redirect: "/admin/dashboard",
       component: DashSonoc,
-    },
-    { 
-      path: "/test",
-      component: Test,
     },
     { 
       path: "/dash",

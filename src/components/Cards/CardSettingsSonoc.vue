@@ -4,12 +4,16 @@
   >
     <div class="rounded-t bg-white mb-0 px-6 py-6">
       <div class="text-center flex justify-between">
-        <h6 class="text-blueGray-700 text-xl font-bold">My account</h6>
+        <h6 class="text-blueGray-700 text-xl font-bold">My Account # 236541</h6>
         <button
           class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
           type="button"
         >
-          EDIT
+        <router-link
+         to="/admin/settings"
+        >
+          SUBMIT
+        </router-link>
         </button>
       </div>
     </div>
@@ -25,13 +29,11 @@
                 class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Username
+                Account Name
               </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="lucky.jesse"
-              />
+              <div class="px-3 py-3 text-blueGray-600 rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                XYZ Telecom
+              </div>
             </div>
           </div>
           <div class="w-full lg:w-6/12 px-4">
@@ -40,13 +42,12 @@
                 class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Email address
+                Current Balance
               </label>
-              <input
-                type="email"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="jesse@example.com"
-              />
+              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
+                2345.67
+              </div>
             </div>
           </div>
           <div class="w-full lg:w-6/12 px-4">
@@ -55,13 +56,11 @@
                 class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                First Name
+                TOTAL PORTS
               </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="Lucky"
-              />
+              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                3000
+              </div>
             </div>
           </div>
           <div class="w-full lg:w-6/12 px-4">
@@ -70,13 +69,11 @@
                 class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Last Name
+                CPS
               </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="Jesse"
-              />
+              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                3000
+              </div>
             </div>
           </div>
         </div>
@@ -84,9 +81,71 @@
         <hr class="mt-6 border-b-1 border-blueGray-300" />
 
         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          Contact Information
+          Email Contacts
         </h6>
-        <div class="flex flex-wrap">
+         <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                COMMERCIAL 
+              </label>
+              <input
+                type="text"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                value="commercial@xyztele.com"
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                ACCOUNTING 
+              </label>
+              <input
+                type="text"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                value="accounting@xyztele.com"
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                RATES 
+              </label>
+              <input
+                type="text"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                value="rates@xyztele.com"
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                NOC 
+              </label>
+              <input
+                type="text"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                value="noc@xyztele.com"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- <div class="flex flex-wrap">
           <div class="w-full lg:w-12/12 px-4">
             <div class="relative w-full mb-3">
               <label
@@ -147,11 +206,11 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <hr class="mt-6 border-b-1 border-blueGray-300" />
+        <!-- <hr class="mt-6 border-b-1 border-blueGray-300" /> -->
 
-        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+        <!-- <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
           About Me
         </h6>
         <div class="flex flex-wrap">
@@ -174,7 +233,7 @@
               >
             </div>
           </div>
-        </div>
+        </div> -->
       </form>
     </div>
   </div>

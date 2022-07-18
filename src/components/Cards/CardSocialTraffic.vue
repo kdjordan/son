@@ -6,7 +6,7 @@
       <div class="flex flex-wrap items-center">
         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
           <h3 class="font-semibold text-base text-blueGray-700">
-            Social traffic
+            OUTSTANDING BALANCES
           </h3>
         </div>
         <div
@@ -29,16 +29,16 @@
             <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
             >
-              Referral
+              CARRIER 
             </th>
             <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
             >
-              Visitors
+              BALANCE
             </th>
-            <th
+            <!-- <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px"
-            ></th>
+            ></th> -->
           </tr>
         </thead>
         <tbody>
@@ -46,17 +46,18 @@
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              Facebook
+              123 TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              1,480
+               <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
+              20,048
             </td>
-            <td
+            <!-- <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              <div class="flex items-center">
+            > -->
+              <!-- <div class="flex items-center">
                 <span class="mr-2">60%</span>
                 <div class="relative w-full">
                   <div
@@ -68,21 +69,22 @@
                     ></div>
                   </div>
                 </div>
-              </div>
-            </td>
+              </div> -->
+            <!-- </td> -->
           </tr>
           <tr>
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              Facebook
+              780 TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              5,480
+              <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
+              55,480
             </td>
-            <td
+            <!-- <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
               <div class="flex items-center">
@@ -98,93 +100,45 @@
                   </div>
                 </div>
               </div>
-            </td>
+            </td> -->
           </tr>
           <tr>
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              Google
+              CDE TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
+              <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
               4,807
             </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              <div class="flex items-center">
-                <span class="mr-2">80%</span>
-                <div class="relative w-full">
-                  <div
-                    class="overflow-hidden h-2 text-xs flex rounded bg-purple-200"
-                  >
-                    <div
-                      style="width: 80%;"
-                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </td>
           </tr>
           <tr>
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              Instagram
+              ZZZ TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
+              <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
               3,678
             </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              <div class="flex items-center">
-                <span class="mr-2">75%</span>
-                <div class="relative w-full">
-                  <div
-                    class="overflow-hidden h-2 text-xs flex rounded bg-lightBlue-200"
-                  >
-                    <div
-                      style="width: 75%;"
-                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-lightBlue-500"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </td>
           </tr>
           <tr>
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              twitter
+              456 TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
+              <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
               2,645
-            </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              <div class="flex items-center">
-                <span class="mr-2">30%</span>
-                <div class="relative w-full">
-                  <div
-                    class="overflow-hidden h-2 text-xs flex rounded bg-orange-200"
-                  >
-                    <div
-                      style="width: 30%;"
-                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
-                    ></div>
-                  </div>
-                </div>
-              </div>
             </td>
           </tr>
         </tbody>

@@ -9,11 +9,8 @@
       </div>
     </div>
     <div class="flex flex-wrap mt-4">
-      <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-        <card-page-visits />
-      </div>
-      <div class="w-full xl:w-4/12 px-4">
-        <card-social-traffic />
+      <div class="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
+        <card-user-details-home />
       </div>
     </div>
   </div>
@@ -21,15 +18,13 @@
 <script>
 import CardLineChart from "@/components/Cards/CardLineChart.vue";
 import CardBarChart from "@/components/Cards/CardBarChart.vue";
-import CardPageVisits from "@/components/Cards/CardPageVisits.vue";
-import CardSocialTraffic from "@/components/Cards/CardSocialTraffic.vue";
+import CardUserDetailsHome from "@/components/Cards/CardUserDetailsHome.vue";
 export default {
   name: "dashboard-page",
   components: {
     CardLineChart,
     CardBarChart,
-    CardPageVisits,
-    CardSocialTraffic,
+    CardUserDetailsHome
   },
 };
 </script>

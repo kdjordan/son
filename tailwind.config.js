@@ -19,7 +19,7 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      "blue": "hsla(201,100%,58%, 1)"
+      "blue": "hsl(201,100%,58%, 1)"
     },
     extend: {
       minHeight: {

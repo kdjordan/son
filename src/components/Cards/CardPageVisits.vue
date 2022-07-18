@@ -6,7 +6,7 @@
       <div class="flex flex-wrap items-center">
         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
           <h3 class="font-semibold text-base text-blueGray-700">
-            Page visits
+            DETAILS
           </h3>
         </div>
         <div
@@ -16,7 +16,7 @@
             class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button"
           >
-            See all
+            EDIT
           </button>
         </div>
       </div>
@@ -29,22 +29,22 @@
             <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
             >
-              Page name
+              Carrier Name
             </th>
             <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
             >
-              Visitors
+              MINUTES/DAY
             </th>
             <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
             >
-              Unique users
+              CPS
             </th>
             <th
               class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
             >
-              Bounce rate
+              REVENUE
             </th>
           </tr>
         </thead>
@@ -53,115 +53,115 @@
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              /argon/
+              ABC TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              4,569
+              100,078
             </td>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              340
+              111
             </td>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
               <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-              46,53%
+              10.12%
             </td>
           </tr>
           <tr>
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              /argon/index.html
+              CDE TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              3,985
+              90,178
             </td>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              319
-            </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-              46,53%
-            </td>
-          </tr>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
-            >
-              /argon/charts.html
-            </th>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              3,513
-            </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              294
-            </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-              36,49%
-            </td>
-          </tr>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
-            >
-              /argon/tables.html
-            </th>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              2,050
-            </td>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
-            >
-              147
+              110
             </td>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
               <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-              50,87%
+              8.01%
             </td>
           </tr>
           <tr>
             <th
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
             >
-              /argon/profile.html
+              123 TELECOM
             </th>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              1,795
+              75,455
             </td>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              190
+              100
+            </td>
+            <td
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+            >
+              <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
+              7.55%
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+            >
+              456 TELECOM
+            </th>
+            <td
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+            >
+              50,000
+            </td>
+            <td
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+            >
+              86
+            </td>
+            <td
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+            >
+              <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
+              5.02%
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+            >
+              780 TELECOM
+            </th>
+            <td
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+            >
+              34,234
+            </td>
+            <td
+              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+            >
+              75
             </td>
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
               <i class="fas fa-arrow-down text-red-500 mr-4"></i>
-              46,53%
+              1.23%
             </td>
           </tr>
         </tbody>
