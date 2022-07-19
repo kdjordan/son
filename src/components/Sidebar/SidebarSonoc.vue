@@ -98,7 +98,7 @@
           </li>
 
           <li class="items-center">
-            <router-link to="/auth/addfunds" v-slot="{ href, navigate, isActive }">
+            <router-link to="/admin/addfunds" v-slot="{ href, navigate, isActive }">
               <a
                 :href="href"
                 @click="navigate"
@@ -120,7 +120,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/settings"
+              to="/admin/invoices"
               v-slot="{ href, navigate, isActive }"
             >
               <a
