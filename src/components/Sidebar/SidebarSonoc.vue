@@ -16,10 +16,10 @@
       <!-- Brand -->
       <router-link
         class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-        to="/"
+        to="/admin/dashboard"
       >
       <div class="flex flex-col items-center justify-center">
-          <img src="@/assets/svg/sonoc-logo.svg" alt="" style="height:5rem;width:5rem;">
+          <img src="@/assets/svg/sonoc-logo.svg" alt="..." style="height:5rem;width:5rem;">
         <div>
           CARRIER PORTAL
         </div>
@@ -63,7 +63,7 @@
             </div>
           </div>
         </div> -->
-        
+        <hr class="my-4 md:min-w-full" />
         <!-- Heading -->
         <h6
           class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
@@ -144,7 +144,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/tables"
+              to="/admin/cdrs"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -203,7 +203,7 @@
           <li class="items-center">
             <router-link
               class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-              to="/auth/login"
+              to="#"
             >
               <i class="fas fa-fingerprint text-blueGray-300 mr-2 text-sm"></i>
               Logout
@@ -221,7 +221,6 @@
 ); }
 
 <script>
-// import NotificationDropdown from "@/components/Dropdowns/NotificationDropdown.vue";
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
 
 export default {
@@ -236,7 +235,6 @@ export default {
     },
   },
   components: {
-    // NotificationDropdown,
     UserDropdown,
   },
 };

@@ -44,7 +44,7 @@
               >
                 Current Balance
               </label>
-              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+              <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
                 <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
                 2345.67
               </div>
@@ -58,7 +58,7 @@
               >
                 TOTAL PORTS
               </label>
-              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+              <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
                 3000
               </div>
             </div>
@@ -71,8 +71,36 @@
               >
                 CPS
               </label>
-              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+              <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
                 3000
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                IPS
+              </label>
+              <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                207.843.22.12 / 207.843.22.15
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                CURRENT RATE DECK
+              </label>
+              <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                <a href="#" class="underline text-lightBlue-500">
+                  xyz_tele.zip
+                </a>
               </div>
             </div>
           </div>

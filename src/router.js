@@ -11,12 +11,12 @@ import Auth from "@/layouts/Auth.vue";
 import Settings from "@/views/admin/Settings.vue";
 
 import Invoices from "@/views/admin/Invoices.vue";
-import Maps from "@/views/admin/Maps.vue";
 
 // views for Auth layout
 
 import Login from "@/views/auth/Login.vue";
 import AddFunds from "@/views/admin/AddFunds.vue";
+import CallDetailReports from "@/views/admin/CallDetailReports.vue";
 import DashSonoc from "@/views/admin/DashSonoc.vue";
 
 // views without layouts
@@ -45,8 +45,8 @@ const routes = [
           component: Invoices,
         },
         {
-          path: "/admin/maps",
-          component: Maps,
+          path: "/admin/cdrs",
+          component: CallDetailReports,
         },
         {
           path: "/admin/addfunds",

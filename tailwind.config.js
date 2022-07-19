@@ -19,7 +19,8 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      "blue": "hsl(201,100%,58%, 1)"
+      "sonocblue": "#29b4ff",
+      "sonocgreen": "#68c786"
     },
     extend: {
       minHeight: {
@@ -78,6 +79,9 @@ module.exports = {
       backgroundSize: {
         full: "100%",
       },
+      colors: {
+        
+      }
     },
   },
   variants: [
