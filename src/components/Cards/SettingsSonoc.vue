@@ -45,7 +45,7 @@
                 Current Balance
               </label>
               <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
-                <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
+                <i class="fas fa-dollar-sign text-emerald-500 mr-1"></i>
                 2345.67
               </div>
             </div>
@@ -59,7 +59,7 @@
                 TOTAL PORTS
               </label>
               <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
-                3000
+                300
               </div>
             </div>
           </div>
@@ -67,7 +67,6 @@
             <div class="relative w-full mb-3">
               <label
                 class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
               >
                 CPS
               </label>
@@ -101,6 +100,20 @@
                 <a href="#" class="underline text-lightBlue-500">
                   xyz_tele.zip
                 </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label
+                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
+              >
+                TECH PREFIX
+              </label>
+              
+              <div class="px-3 py-3 text-blueGray-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
+                  1234#
               </div>
             </div>
           </div>

@@ -19,7 +19,8 @@
         to="/admin/dashboard"
       >
       <div class="flex flex-col items-center justify-center">
-          <img src="@/assets/svg/sonoc-logo.svg" alt="..." style="height:5rem;width:5rem;">
+          <img alt="..." src="@/assets/img/logo-sonoc.png" class="h-auto align-middle border-none max-w-150-px">
+          <!-- <img src="@/assets/svg/sonoc-logo.svg" alt="..." style="height:5rem;width:5rem;"> -->
         <div>
           CARRIER PORTAL
         </div>
