@@ -19,8 +19,8 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      "sonocblue": "#29b4ff",
-      "sonocgreen": "#68c786"
+      "sonocBlue": "#29b4ff",
+      "sonocGreen": "#68c786"
     },
     extend: {
       minHeight: {

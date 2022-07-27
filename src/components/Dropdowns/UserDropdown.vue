@@ -27,7 +27,7 @@
       }"
     >
       <a
-        href="javascript:void(0);"
+         v-on:click.prevent="logout()"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
       >
         Logout
@@ -61,6 +61,17 @@ export default {
         });
       }
     },
+    logout() {
+      this.$auth.logout({
+        returnTo: window.location.origin + `/auth/logout`
+      });
+    }
   },
 };
 </script>
+<style>
+a {
+  cursor: pointer;
+}
+  
+</style>
