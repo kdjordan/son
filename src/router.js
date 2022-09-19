@@ -20,6 +20,7 @@ import CallDetailReports from "@/views/admin/CallDetailReports.vue";
 import Settings from "@/views/admin/Settings.vue";
 import Invoices from "@/views/admin/Invoices.vue";
 
+import Api from "@/views/admin/Api.vue";
 // routes
 
 const routes = [
@@ -47,6 +48,10 @@ const routes = [
         {
           path: "/admin/addfunds",
           component: AddFunds,
+        },
+        {
+          path: "/admin/api",
+          component: Api,
         },
       ],
     },

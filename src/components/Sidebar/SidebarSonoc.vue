@@ -210,6 +210,15 @@
               Logout
             </router-link>
           </li>
+          <li class="items-center">
+            <router-link
+              class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+              to="/admin/api"
+            >
+              <i class="fas fa-fingerprint text-blueGray-300 mr-2 text-sm"></i>
+              API
+            </router-link>
+          </li>
         </ul>
 
         <!-- Divider -->
@@ -219,7 +228,7 @@
     </div>
   </nav>
 </template>
-); }
+); 
 
 <script>
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";

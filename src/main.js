@@ -12,6 +12,9 @@ import "@/assets/styles/tailwind.css";
 // mouting point for the whole app
 import App from "@/App.vue";
 
+
+
+
 function callbackRedirect(appState) {
     router.push(
         appState && appState.targetUrl

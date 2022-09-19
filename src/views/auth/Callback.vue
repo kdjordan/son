@@ -8,7 +8,7 @@ export default {
   name: 'Callback',
   created() {
     console.log('callback')
-    if(this.$auth.isAuthenticated) {
+    if(this.$auth.isAuthenticated.value) {
         console.log('good to go')
         this.$router.push({ path: '/admin/dashboard' })
     }
