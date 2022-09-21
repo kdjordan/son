@@ -25,6 +25,7 @@
     "gulp-append-prepend": "1.0.8",
     "tailwindcss": "2.0.4",
     "vue": "3.0.7",
+    "vue-loader": "^17.0.0",
     "vue-router": "4.0.5",
     "vuex": "^4.0.2"
   },

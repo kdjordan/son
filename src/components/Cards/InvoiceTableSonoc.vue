@@ -17,31 +17,21 @@
     </div>
     <div class="block w-full overflow-x-auto">
       <!-- Invoices table -->
-      <table class="items-center w-full bg-transparent border-collapse">
+      <table class="w-full bg-transparent border-collapse">
         <thead>
           <tr>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             >
-              BILLING PERIOD
+              ID
             </th>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
-              :class="[
-                color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
-                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
-              ]"
-            >
-             AMOUNT
-            </th>
-            <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-right"
+              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -50,167 +40,132 @@
             >
              INVOICE
             </th>
+            <th
+              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              :class="[
+                color === 'light'
+                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
+              ]"
+            >
+             PERIOD
+            </th>
+            <th
+              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              :class="[
+                color === 'light'
+                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
+              ]"
+            >
+             INVOICE DATE
+            </th>
+            <th
+              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              :class="[
+                color === 'light'
+                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
+              ]"
+            >
+             INVOICE AMOUNT
+            </th>
+            <th
+              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              :class="[
+                color === 'light'
+                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
+              ]"
+            >
+             DUE DATE
+            </th>
+            <th
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-middle"
+              :class="[
+                color === 'light'
+                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
+              ]"
+            >
+             DOWNLOAD
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+          <tr v-for="invoice in loadedInvoices" :key="invoice">
+            <th 
+              class="px-6 py-4 align-middle text-xs  text-middle"
             >
               <span
                 class="ml-3 font-bold text-blueGray-600"
               >
-                6/1/2022 - 6/31/2022
+                {{invoice.id}}
               </span>
             </th>
             <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-middle"
+              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
               
             >
-              $2,500 USD
+              {{invoice.number}}
             </td>
             <td
-              class="border-t-0 px-6 align-right border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
+              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              
             >
-            <a href="#" class="text-blueGray-600">
-              june_2022.pdf
+              {{invoice.period}}
+            </td>
+            <td
+              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              
+            >
+              {{invoice.date}}
+            </td>
+            <td
+              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              
+            >
+              {{invoice.amount}}
+            </td>
+            <td
+              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap  text-middle"
+              
+            >
+              {{invoice.due_date}}
+            </td>
+            <td
+              class="border-t-0 px-6 py-4 align-right border-l-0 border-r-0 text-xs whitespace-nowrap  text-middle"
+            >
+            <a href={{invoice.link}} class="text-blueGray-600">
+              &#8595;
             </a>
             </td>
           </tr>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
-            >
-              <span
-                class="ml-3 font-bold text-blueGray-600"
-              >
-                5/1/2022 - 5/31/2022
-              </span>
-            </th>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-middle"
-              
-            >
-              $2,850 USD
-            </td>
-            <td
-              class="border-t-0 px-6 align-right border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
-            >
-            <a href="#" class="text-blueGray-600">
-              may_2022.pdf
-            </a>
-            </td>
-          </tr>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
-            >
-              <span
-                class="ml-3 font-bold text-blueGray-600"
-              >
-                4/1/2022 - 4/31/2022
-              </span>
-            </th>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-middle"
-              
-            >
-              $2,000 USD
-            </td>
-            <td
-              class="border-t-0 px-6 align-right border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
-            >
-            <a href="#" class="text-blueGray-600">
-              april_2022.pdf
-            </a>
-            </td>
-          </tr>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
-            >
-              <span
-                class="ml-3 font-bold text-blueGray-600"
-              >
-                3/1/2022 - 3/31/2022
-              </span>
-            </th>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-middle"
-              
-            >
-              $1,950 USD
-            </td>
-            <td
-              class="border-t-0 px-6 align-right border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
-            >
-            <a href="#" class="text-blueGray-600">
-              march_2022.pdf
-            </a>
-            </td>
-          </tr>
-          <tr>
-            <th
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
-            >
-              <span
-                class="ml-3 font-bold text-blueGray-600"
-              >
-                6/1/2022 - 6/31/2022
-              </span>
-            </th>
-            <td
-              class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-middle"
-              
-            >
-              $1,547 USD
-            </td>
-            <td
-              class="border-t-0 px-6 align-right border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
-            >
-            <a href="#" class="text-blueGray-600">
-              feb_2022.pdf
-            </a>
-            </td>
-          </tr>
-          
-        
          
           
-       
         </tbody>
       </table>
     </div>
   </div>
 </template>
 <script>
+import {useStore, mapState} from "vuex";
 
-
-import bootstrap from "@/assets/img/bootstrap.jpg";
-import angular from "@/assets/img/angular.jpg";
-import sketch from "@/assets/img/sketch.jpg";
-import react from "@/assets/img/react.jpg";
-import vue from "@/assets/img/react.jpg";
-
-import team1 from "@/assets/img/team-1-800x800.jpg";
-import team2 from "@/assets/img/team-2-800x800.jpg";
-import team3 from "@/assets/img/team-3-800x800.jpg";
-import team4 from "@/assets/img/team-4-470x470.png";
 
 export default {
+  async created(){
+    const store = useStore();
+    await store.dispatch('loadInvoices')
+    // this.invoices = store.getters('GET_INVOICES')
+  },
   data() {
     return {
-      bootstrap,
-      angular,
-      sketch,
-      react,
-      vue,
-      team1,
-      team2,
-      team3,
-      team4,
-    };
+      invoices: []
+    }
   },
+  computed: mapState({
+    loadedInvoices: state => state.invoices
+  }),
   components: {
     
   },
@@ -222,6 +177,6 @@ export default {
         return ["light", "dark"].indexOf(value) !== -1;
       },
     },
-  },
-};
+  }
+}
 </script>

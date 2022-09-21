@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import router from './router'
 import authConfig from '../auth_config.json'
 import { setupAuth } from './auth'
+import store from "./store";
 
 // styles
 
@@ -24,6 +25,6 @@ function callbackRedirect(appState) {
     }
     
 setupAuth(authConfig, callbackRedirect).then((auth) => {
-    createApp(App).use(auth).use(router).mount("#app")
+    createApp(App).use(auth).use(router).use(store).mount("#app")
     // App.use(auth).mount('#app')
 })
