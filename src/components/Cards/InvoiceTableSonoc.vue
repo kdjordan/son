@@ -19,9 +19,9 @@
       <!-- Invoices table -->
       <table class="w-full bg-transparent border-collapse">
         <thead>
-          <tr>
+          <tr class="whitespace-nowrap">
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -31,7 +31,7 @@
               ID
             </th>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -41,7 +41,7 @@
              INVOICE
             </th>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -51,7 +51,7 @@
              PERIOD
             </th>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -61,7 +61,7 @@
              INVOICE DATE
             </th>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -71,7 +71,7 @@
              INVOICE AMOUNT
             </th>
             <th
-              class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -81,7 +81,7 @@
              DUE DATE
             </th>
             <th
-              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-middle"
+              class="px-6 align-middle py-3 text-xs uppercase  font-semibold text-center"
               :class="[
                 color === 'light'
                   ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
@@ -91,11 +91,11 @@
              DOWNLOAD
             </th>
           </tr>
-        </thead>
+        </thead>  
         <tbody>
-          <tr v-for="invoice in loadedInvoices" :key="invoice">
+          <tr v-for="invoice in loadedInvoices" :key="invoice"  class="whitespace-nowrap">
             <th 
-              class="px-6 py-4 align-middle text-xs  text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
             >
               <span
                 class="ml-3 font-bold text-blueGray-600"
@@ -104,39 +104,39 @@
               </span>
             </th>
             <td
-              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
               
             >
               {{invoice.number}}
             </td>
             <td
-              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
               
             >
               {{invoice.period}}
             </td>
             <td
-              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
               
             >
               {{invoice.date}}
             </td>
             <td
-              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
               
             >
               {{invoice.amount}}
             </td>
             <td
-              class="border-t-0 px-6 py-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap  text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
               
             >
               {{invoice.due_date}}
             </td>
             <td
-              class="border-t-0 px-6 py-4 align-right border-l-0 border-r-0 text-xs whitespace-nowrap  text-middle"
+              class="px-6 py-4 align-middle text-xs  text-center"
             >
-            <a href={{invoice.link}} class="text-blueGray-600">
+            <a href={{invoice.link}} class="text-blueGray-600"> 
               &#8595;
             </a>
             </td>
