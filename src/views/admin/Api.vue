@@ -117,7 +117,7 @@ export default {
     async getAccount() {
       console.log('getAccount', this.token)
       try {
-        let resp = await axios.get('https://billing-portal-api.glotell.sonoc.io/v1/home/', {  
+        let resp = await axios.get(`https://billing-portal-api.glotell.sonoc.io/v1/accounts/5737/invoices?page=1&size=10`, {  
                                     headers: {
                                       'Authorization' : `Bearer ${this.token}`, 
                                     }

@@ -6,14 +6,14 @@
 <script>
 export default {
   name: 'Callback',
-  created() {
-    console.log('callback')
+  async created() {
     if(this.$auth.isAuthenticated.value) {
-        console.log('good to go')
+      let token = await this.$auth.getTokenSilently()
+        this.$store.commit('SET_TOKEN', token)
         this.$router.push({ path: '/admin/dashboard' })
     }
     if (this.$route.query.error) {
-        console.log('error in callback')
+        // console.log('error in callback')
       this.$auth.logout({
         returnTo: window.location.origin + `/error?error=${encodeURI(this.$route.query.error)}&error_description=${encodeURI(this.$route.query.error_description)}`
       })

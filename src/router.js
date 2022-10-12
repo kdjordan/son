@@ -21,6 +21,7 @@ import Settings from "@/views/admin/Settings.vue";
 import Invoices from "@/views/admin/Invoices.vue";
 
 import Api from "@/views/admin/Api.vue";
+import { routeGuard } from './auth';
 // routes
 
 const routes = [
@@ -32,26 +33,32 @@ const routes = [
         {
           path: "/admin/dashboard",
           component: DashSonoc,
+          beforeEnter: routeGuard 
         },
         {
           path: "/admin/settings",
           component: Settings,
+          beforeEnter: routeGuard
         },
         {
           path: "/admin/invoices",
           component: Invoices,
+          beforeEnter: routeGuard
         },
         {
           path: "/admin/cdrs",
           component: CallDetailReports,
+          beforeEnter: routeGuard
         },
         {
           path: "/admin/addfunds",
           component: AddFunds,
+          beforeEnter: routeGuard
         },
         {
           path: "/admin/api",
           component: Api,
+          beforeEnter: routeGuard
         },
       ],
     },
