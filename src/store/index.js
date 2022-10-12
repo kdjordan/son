@@ -1,8 +1,10 @@
 import { createStore } from "vuex";
 import invoices from "../static/invoices";
 import axios from "axios";
+import createPersistedState from "vuex-persistedstate";
 
 export default createStore({
+    plugins: [createPersistedState()],
     state: {
         loading: true,
         token: null,
