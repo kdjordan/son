@@ -9,6 +9,7 @@ export default {
   async created() {
     if(this.$auth.isAuthenticated.value) {
       let token = await this.$auth.getTokenSilently()
+      console.log('**token', token)
         this.$store.commit('SET_TOKEN', token)
         this.$router.push({ path: '/admin/dashboard' })
     }

@@ -1,8 +1,5 @@
 <template>
-  <div v-if="loadingStatus">
-    <h1>LOADING</h1>
-  </div>
-  <div v-else
+  <div 
     class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded"
     :class="[color === 'light' ? 'bg-white' : 'bg-emerald-900 text-white']"
   >
@@ -18,7 +15,11 @@
         </div>
       </div>
     </div>
-    <div class="block w-full overflow-x-auto">
+    <!-- <div v-if="loadingStatus"> -->
+    <div v-if="loadingStatus" class="w-full h-96">
+        <h1 class="text-center">LOADING</h1>
+    </div>
+    <div v-else class="block w-full overflow-x-auto">
       <!-- Invoices table -->
       <table class="w-full bg-transparent border-collapse">
         <thead>
