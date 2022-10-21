@@ -97,7 +97,7 @@
           </tr>
         </thead>  
         <tbody>
-          <tr v-for="invoice in loadedInvoices.slice(`${pageIndex}`, 9)" :key="invoice"  class="whitespace-nowrap">
+          <tr v-for="invoice in loadedInvoices.slice(0, 9)" :key="invoice"  class="whitespace-nowrap">
             <th 
               class="px-6 py-4 align-middle text-xs  text-center"
             >
@@ -159,19 +159,10 @@
 import {useStore, mapState} from "vuex";
 
 export default {
-  data() {
-    return {
-      pageIndex: 0
-    }
-  },
-  
+
   async created() {
-    try {
-      const store = useStore();
-      await store.dispatch('loadInvoices')
-    } catch(e) {
-      console.log('error', e)
-    }
+    const store = useStore();
+    await store.dispatch('loadInvoices')
   }, 
   computed : mapState({
     loadedInvoices: state => state.invoices,
@@ -187,7 +178,5 @@ export default {
     },
   }
 }
-
-
 
 </script>
