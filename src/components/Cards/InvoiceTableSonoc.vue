@@ -97,21 +97,21 @@
           </tr>
         </thead>  
         <tbody>
-          <tr v-for="invoice in loadedInvoices" :key="invoice"  class="whitespace-nowrap">
+          <tr v-for="invoice in loadedInvoices.slice(`${pageIndex}`, 9)" :key="invoice"  class="whitespace-nowrap">
             <th 
               class="px-6 py-4 align-middle text-xs  text-center"
             >
               <span
                 class="ml-3 font-bold text-blueGray-600"
               >
-                {{invoice.id}}
+                {{invoice.invoiceId}}
               </span>
             </th>
             <td
               class="px-6 py-4 align-middle text-xs  text-center"
               
             >
-              {{invoice.number}}
+              {{invoice.numInvoice}}
             </td>
             <td
               class="px-6 py-4 align-middle text-xs  text-center"
@@ -123,7 +123,7 @@
               class="px-6 py-4 align-middle text-xs  text-center"
               
             >
-              {{invoice.date}}
+              {{invoice.endDate}}
             </td>
             <td
               class="px-6 py-4 align-middle text-xs  text-center"
@@ -135,12 +135,15 @@
               class="px-6 py-4 align-middle text-xs  text-center"
               
             >
-              {{invoice.due_date}}
+              {{invoice.dueDate}}
             </td>
             <td
               class="px-6 py-4 align-middle text-xs  text-center"
             >
-            <a href={{invoice.link}} class="text-blueGray-600"> 
+            <a :href="`http://development.sonoc.io:8080/portal-api/v1/invoices/${invoice.invoiceId}/download`"  
+                class="text-blueGray-600"
+                target="_blank" rel="noopener"
+                > 
               &#8595;
             </a>
             </td>
@@ -155,17 +158,22 @@
 <script>
 import {useStore, mapState} from "vuex";
 
-
 export default {
-  async created(){
-    const store = useStore();
-    await store.dispatch('loadInvoices')
-  },
   data() {
     return {
+      pageIndex: 0
     }
   },
-  computed: mapState({
+  
+  async created() {
+    try {
+      const store = useStore();
+      await store.dispatch('loadInvoices')
+    } catch(e) {
+      console.log('error', e)
+    }
+  }, 
+  computed : mapState({
     loadedInvoices: state => state.invoices,
     loadingStatus: state => state.loading
   }),
@@ -179,4 +187,7 @@ export default {
     },
   }
 }
+
+
+
 </script>
