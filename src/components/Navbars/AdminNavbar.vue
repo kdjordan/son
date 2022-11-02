@@ -11,7 +11,7 @@
         class="text-white text-sm uppercase hidden lg:inline-block font-semibold"
         href="javascript:void(0)"
       >
-        XYZ TELECOM CO.
+      {{profile.accountDesc}}
       </a>
      
       <!-- User -->
@@ -25,10 +25,14 @@
 
 <script>
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
+import {mapState} from "vuex";
 
 export default {
   components: {
     UserDropdown,
   },
+  computed : mapState({
+    profile: state => state.profile
+  }),
 };
 </script>

@@ -19,7 +19,6 @@
 import CardLineChart from "@/components/Cards/CardLineChart.vue";
 import CardBarChart from "@/components/Cards/CardBarChart.vue";
 import CardUserDetailsHome from "@/components/Cards/CardUserDetailsHome.vue";
-import {useStore} from "vuex";
 
 export default {
   name: "dashboard-page",
@@ -27,10 +26,6 @@ export default {
     CardLineChart,
     CardBarChart,
     CardUserDetailsHome
-  },
-  async created() {
-    const store = useStore();
-    await store.dispatch('loadProfile')
-  }, 
+  }
 };
 </script>

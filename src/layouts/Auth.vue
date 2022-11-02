@@ -1,3 +1,15 @@
+<script>
+import {useStore} from "vuex";
+
+export default {
+  async created() {
+      const store = useStore();
+      await store.dispatch('loadInvoices')
+      await store.dispatch('loadProfile')
+    }
+}
+</script>
+
 <template>
   <div>
     <main>
