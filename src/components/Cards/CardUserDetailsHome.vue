@@ -1,5 +1,8 @@
 <template>
-  <div
+  <div v-if="loadingStatus" class="w-full h-96">
+        <h1 class="text-center">LOADING</h1>
+    </div>
+  <div v-else
     class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0"
   >
     <div class="rounded-t bg-white mb-0 px-6 py-6">
@@ -31,7 +34,7 @@
                 Account Name
               </label>
               <div class="px-3 py-3 text-blueGray-600 rounded text-sm shadow w-full ease-linear transition-all duration-150">
-                {{profile.acronym}}
+                {{profile.accountDesc}}
               </div>
             </div>
           </div>
@@ -45,7 +48,7 @@
               </label>
               <div class="px-3 py-3 text-blue-600  rounded text-sm shadow w-full ease-linear transition-all duration-150">
                 <i class="fas fa-dollar-sign text-emerald-500 mr-4"></i>
-                2345.67
+                {{profile.balance}}
               </div>
             </div>
           </div>
@@ -78,22 +81,18 @@
         </div>
       </form>
     </div>
-    {{profile}}
+    {{loadingStatus}}
   </div>
 </template>
 
 <script>
-import {useStore, mapState} from "vuex";
+import {mapState} from "vuex";
 
 export default {
-
-  async created() {
-    const store = useStore();
-    await store.dispatch('loadInvoices')
-  }, 
   computed : mapState({
-    profile: state => state.profile
-  }),
+    profile: state => state.profile,
+    loadingStatus: state => state.loading
+  })
 }
 
 </script>

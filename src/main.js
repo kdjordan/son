@@ -13,9 +13,6 @@ import "@/assets/styles/tailwind.css";
 // mouting point for the whole app
 import App from "@/App.vue";
 
-
-
-
 function callbackRedirect(appState) {
     router.push(
         appState && appState.targetUrl
@@ -25,6 +22,10 @@ function callbackRedirect(appState) {
     }
     
 setupAuth(authConfig, callbackRedirect).then((auth) => {
-    createApp(App).use(auth).use(router).use(store).mount("#app")
+    createApp(App)
+        .use(auth)
+        .use(router)
+        .use(store)
+        .mount("#app")
     // App.use(auth).mount('#app')
 })
