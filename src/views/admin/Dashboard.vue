@@ -31,10 +31,15 @@ export default {
   },
   async created() {
     const store = useStore();
-    await store.dispatch('loadProfile')
-    await store.dispatch('loadResources')
-    await store.dispatch('loadInvoices')
-    store.commit('SET_LOADING', false)
+    try {
+      await store.dispatch('loadProfile')
+      await store.dispatch('loadResources')
+      await store.dispatch('loadInvoices')
+      store.commit('SET_LOADING', false)
+
+    } catch(e) {
+      console.log('****', e)
+    }
   }, 
 };
 </script>
