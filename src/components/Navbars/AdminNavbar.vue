@@ -1,3 +1,16 @@
+<script>
+import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
+import {mapState} from "vuex";
+
+export default {
+  components: {
+    UserDropdown,
+  },
+  computed : mapState({
+    profile: state => state.profile
+  }),
+};
+</script>
 <template>
   <!-- Navbar -->
   <nav
@@ -23,16 +36,4 @@
   <!-- End Navbar -->
 </template>
 
-<script>
-import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
-import {mapState} from "vuex";
 
-export default {
-  components: {
-    UserDropdown,
-  },
-  computed : mapState({
-    profile: state => state.profile
-  }),
-};
-</script>

@@ -5,12 +5,13 @@
     </div>
   </div>
 </template>
+
 <script>
 import SettingsSonoc from "@/components/Cards/SettingsSonoc.vue";
 
 export default {
   components: {
     SettingsSonoc,
-  },
+  }
 };
 </script>

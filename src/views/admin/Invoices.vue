@@ -5,12 +5,13 @@
     </div>
   </div>
 </template>
+
 <script>
 import InvoiceTableSonoc from "@/components/Cards/InvoiceTableSonoc.vue";
 
 export default {
   components: {
     InvoiceTableSonoc,
-  },
+  }
 };
 </script>

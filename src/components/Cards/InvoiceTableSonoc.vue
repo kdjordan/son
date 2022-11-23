@@ -156,14 +156,9 @@
   </div>
 </template>
 <script>
-import {useStore, mapState} from "vuex";
+import { mapState } from "vuex";
 
 export default {
-
-  async created() {
-    const store = useStore();
-    await store.dispatch('loadInvoices')
-  }, 
   computed : mapState({
     loadedInvoices: state => state.invoices,
     loadingStatus: state => state.loading
