@@ -30,6 +30,7 @@ export default {
 
   },
   async created() {
+    /* populate all data with API cals*/
     const store = useStore();
     try {
       await store.dispatch('loadProfile')
