@@ -1,9 +1,18 @@
+<script>
+export default {
+    methods: {
+        login() {
+            this.$router.push({ path: '/' })
+        }
+    }
+}
+</script>
 <template>
   <div  class="container mx-auto h-full">
   <div class="container mx-auto px-4 h-full">
   </div>
     <div class="flex content-center items-center justify-center h-full">
-      <div class="w-full lg:w-4/12 px-4">
+      <div class="w-full lg:w-6/12 px-4">
       
         <div
           class="relative flex flex-col content-center items-center min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100  border-0"
@@ -34,13 +43,5 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-    methods: {
-        login() {
-            this.$router.push({ path: '/' })
-        }
-    }
-}
-</script>
+
 
