@@ -30,7 +30,7 @@ export default {
 
   },
   async created() {
-    /* populate all data with API cals*/
+    /* populate all data with API calls */
     const store = useStore();
     try {
       await store.dispatch('loadProfile')
@@ -39,7 +39,7 @@ export default {
       store.commit('SET_LOADING', false)
 
     } catch(e) {
-      console.log('****', e)
+      console.log('error in loading data', e)
     }
   }, 
 };

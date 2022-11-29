@@ -7,7 +7,7 @@ export default createStore({
     // plugins: [createPersistedState()],
     state: {
         loading: true,
-        token: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik4yQnZiUEdFRXpncENoV282VzlDYyJ9.eyJodHRwczovL2JpbGxpbmctYXBpLmdsb3RlbGwuc29ub2MuaW8vZW1haWwiOiJrLmRlYW4uam9yZGFuQGdtYWlsLmNvbSIsImh0dHBzOi8vYmlsbGluZy1hcGkuZ2xvdGVsbC5zb25vYy5pby9hY2NvdW50SWQiOiI1NzM3IiwiaXNzIjoiaHR0cHM6Ly9wb3J0YWwtZ2xvdGVsbC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjIzYmQ1MTYwZjRiOTIwMDY5MjRlZjU3IiwiYXVkIjpbImh0dHBzOi8vYmlsbGluZy1hcGkuZ2xvdGVsbC5zb25vYy5pby8iLCJodHRwczovL3BvcnRhbC1nbG90ZWxsLnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NjkxNzY3ODksImV4cCI6MTY2OTI2MzE4OSwiYXpwIjoiZGNMN2JFc21hdTZVaFFDclhldTdPM2kzWHpUeWRBcnAiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.ZT-0zqTx3vMuOM9-WoSgl6ME-BnxZiU60ssEsg5I0Sc811K-JmLUWunBeEhbVc06-FpyyNVeDyv-iseUk6vH1RmRuthxhn94PFViNz1UdLI8qlXZxEktprDfqXvnennvZGij5qlESfrFWWYjWJycOn-u68-_Y8H-Ydy_y32F0TyBt8-GU4c9notoN0EothEoqH8McEl2RAANx8lOl3k6en2dJe9X4peyiVyPAxEHX1JWvMDt3-_X_tZjT7qE8kMYlaFa2PAEYifd_dPVj8CNlnT5IxlDjdWWJI5BVBxWlfNO8A6nrZRUSZqqjUO65U8cOVvObp42rl582SiDLlvOCw',
+        token: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik4yQnZiUEdFRXpncENoV282VzlDYyJ9.eyJodHRwczovL2JpbGxpbmctYXBpLmdsb3RlbGwuc29ub2MuaW8vZW1haWwiOiJrLmRlYW4uam9yZGFuQGdtYWlsLmNvbSIsImh0dHBzOi8vYmlsbGluZy1hcGkuZ2xvdGVsbC5zb25vYy5pby9hY2NvdW50SWQiOiI1NzM3IiwiaXNzIjoiaHR0cHM6Ly9wb3J0YWwtZ2xvdGVsbC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjIzYmQ1MTYwZjRiOTIwMDY5MjRlZjU3IiwiYXVkIjpbImh0dHBzOi8vYmlsbGluZy1hcGkuZ2xvdGVsbC5zb25vYy5pby8iLCJodHRwczovL3BvcnRhbC1nbG90ZWxsLnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2Njk2OTk5MDMsImV4cCI6MTY2OTc4NjMwMywiYXpwIjoiZGNMN2JFc21hdTZVaFFDclhldTdPM2kzWHpUeWRBcnAiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pn5JZp4TiBuR8XzlMM5CAG0N3G0RxKdCBVvhjFJ6YE_ZLoTlaaeyxsO5oAIHiQUNP5hl5eA09LwANkrUU_qfVKBU436uMZl0CwleSjlsHhg_0Qrkxixlaqqc-Eos2FgDXgWiK-lnqak1HjohmgLJww577kjD3DfKSjd1PSfLGyo0va_ZXWfacyJ98JuCYGs_bxgRCZciQDS6On1I8-GmomjjBhBhEbST289h04uhB1Al_noT6xUT3gtmqtUVDMrxeIurUVb9Jaj4B60rm7DWB5mlTG1SWG4FVSR0Np5eAbSbxqexY-Xm62G0ky0RtjR-HjANWolCZTNSnhy6fyYSNQ',
         invoices: [],
         profile: {},
         accountId: null,
@@ -44,7 +44,7 @@ export default createStore({
         async loadInvoices({commit,  state}) {
             console.log('calling load invoices')
             try {
-                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/accounts/${state.accountId || state.profile.id}/invoices`, {  
+                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/accounts/5737/invoices`, {  
                     headers: {
                         'Authorization' : `Bearer ${state.token}`, 
                     }
@@ -59,7 +59,7 @@ export default createStore({
         async loadProfile({commit,  state}) {
             console.log('calling load profile')
             try {
-                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/accounts/${state.accountId || state.profile.id}/`, 
+                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/accounts/5737/`, 
                 {  
                     headers: {
                         'Authorization' : `Bearer ${state.token}`, 
@@ -73,7 +73,20 @@ export default createStore({
         },
         async loadResources({commit,  state}) {
             try {
-                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/resourceGroups/${state.accountId || state.profile.id}/`, {  
+                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/resourceGroups/5737/`, {  
+                    headers: {
+                        'Authorization' : `Bearer ${state.token}`, 
+                    }
+                })
+                console.log('got resources', data)
+                commit('SET_RESOURCES', data)
+              } catch (error) {
+                console.log('error', error)
+              }
+        },
+        async getBalance({commit,  state}) {
+            try {
+                let { data } = await axios.get(`${process.env.VUE_APP_BASE_URL}/v1/resourceGroups/5737/`, {  
                     headers: {
                         'Authorization' : `Bearer ${state.token}`, 
                     }
@@ -87,3 +100,5 @@ export default createStore({
     }
 
 })
+
+// /v3/api-docs

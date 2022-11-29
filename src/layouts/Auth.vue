@@ -2,10 +2,12 @@
 import {useStore} from "vuex";
 
 export default {
-  async created() {
-      const store = useStore();
+  created() {
+    const store = useStore();
+    setTimeout(async () => {
       await store.dispatch('loadInvoices')
       await store.dispatch('loadProfile')
+    }, 1000)
     }
 }
 </script>
